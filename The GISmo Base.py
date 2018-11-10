@@ -13,26 +13,10 @@ mainframe.columnconfigure(0, weight=1)
 mainframe.rowconfigure(0, weight=1)
 mainframe.pack(pady=100, padx=100)
 
-tkvar = StringVar(root)
+notes = ttk.Notebook(mainframe)
+f1 = ttk.Frame(notes)   # first page, which would get widgets gridded into it
+f2 = ttk.Frame(notes)   # second page
+notes.add(f1, text='Bum')
+notes.add(f2, text='arse')
 
-M_1 = {'Scale', 'Laid Length', 'Pack Tracker', 'Referral Tracker'}
-tkvar.set('Scale')
-
-popupMenu = OptionMenu(mainframe, tkvar, *M_1)
-Label(mainframe, text="Where to?").grid(row=1, column=1)
-popupMenu.grid(row=2, column=1)
-
-
-Label(mainframe, text=" ").grid(row=3, column=1)
-
-def change_dropdown(*args):
-    print(tkvar.get())
-    import tkvar.get()
-    ll()
-
-
-tkvar.trace('w', change_dropdown)
-
-ttk.Button(mainframe, text="Quit", command=root.destroy).grid(row=6, column=1)
-
-root.mainloop()
+print ('hello..its all done')
