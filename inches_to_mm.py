@@ -13,7 +13,6 @@ class InchTomm:
                 mm.set(25.4 * value)
             except ValueError:
                 pass
-        root = Tk()
 
         mainframe = Frame(master)
         mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
@@ -34,8 +33,6 @@ class InchTomm:
         ttk.Label(mainframe, text="mm").grid(column=3, row=2, sticky=W)
 
         for child in mainframe.winfo_children(): child.grid_configure(padx=5, pady=5)
-
-        root.bind('<Return>', calculate)
 
         return mainframe
 
