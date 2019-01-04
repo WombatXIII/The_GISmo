@@ -20,7 +20,7 @@ argyle.rowconfigure(0, weight=1)
 ttk.Button(argyle, text="Quit", command=TheMainFrame.destroy).grid (column=1, row=1,sticky=E)
 argyle.pack(pady=10, padx=10)
 
-#To add a new calculator to the notebook 
+#To add a new calculator to the notebook
 # Step 1 create your own xxDetails Class
 # Step 2 pass that into CreateCalculatorFrame function,
 # Step 3 then add that frame to the notebook
