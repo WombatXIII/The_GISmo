@@ -37,6 +37,7 @@ def Details():
     print ('initial Angle, ', SeCir.AngB)
     print ('Following Angles, ', SeCir.AngTwoB)
     print ('with a length of ', SeCir.Len)
+    print (5/2)
 
 def Again():
     print ('Again?')
