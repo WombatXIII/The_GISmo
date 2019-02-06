@@ -1,6 +1,8 @@
 from Calculator.Info.Parameter import Parameter
 
+
 class ScaleDetails:
+
 
     def __init__(self):
         self.Title = "Dodgy dimension fixer"
@@ -8,7 +10,7 @@ class ScaleDetails:
         self.Plan = Parameter("Plan scale(1:__)")
         self.dim = Parameter("incorrect dimension (m)")
         self.ConvertedToDim = Parameter("Converted to dim (m)")
-    
+
     def GetInputs(self):
         return [self.Ruler, self.Plan, self.dim]
 
