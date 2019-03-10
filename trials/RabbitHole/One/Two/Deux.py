@@ -1,0 +1,2 @@
+def Target():
+	print('Hit!')
