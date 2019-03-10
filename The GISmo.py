@@ -1,9 +1,9 @@
-import tkinter as tk
 from tkinter import Tk, ttk, Frame, N, W, E, S
 from Calculator.Info.ScaleDetails import ScaleDetails
 from Calculator.Info.LengthDetails import LengthDetails
 from Calculator.Info.InchesTommDetails import InchTommDetails
 from Calculator.CalculatorDisplayFuncs import CreateCalculatorFrame
+
 
 TheMainFrame = Tk()
 TheMainFrame.title("The GISmo")
